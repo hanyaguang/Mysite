@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>首页 | 依冰科技</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+
+<navbar class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="/index" class="navbar-brand">依冰科技</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" style="margin-top: 0;">
+				<li class="active"><a href="/index"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+				<li><a href="/about"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+			</ul>
+		</div>
+	</div>
+</navbar>
+
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active" style="background: #FFFFFF">
+			<img src={% static 'img/web1.png' %} alt="第一张">
+		</div>
+		<div class="item" style="background: #FFFFFF">
+			<img src={% static 'img/web2.png' %} alt="第二张">
+		</div>
+		<div class="item" style="background: #FFFFFF">
+			<img src={% static 'img/web3.png' %} alt="第三张">
+		</div>
+	</div>
+	<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#myCarousel" data-slide="next" class="carousel-control right">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+
+<div class="tab1">
+	<div class="container">
+		<h2 class="tab-h2">「实惠的信息系统」</h2>
+		<p class="tab-p">低成本的信息系统建设，满足基本的微型企业需求</p>
+		<div class="row">
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src={% static 'img/tab1-1.png' %} class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">低成本建设</h4>
+						<p class="text-muted">其他：高于10万的预算</p>
+						<p>我们：低于万元的模块化搭建，需要什么购买什么</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src={% static 'img/tab1-2.png' %} class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">模块化安装</h4>
+						<p class="text-muted">其他：不分细节，客户不知所以然</p>
+						<p>我们：文件服务器模块 用户管理模块 邮件管理模块 网站模块</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src={% static 'img/tab1-3.png' %} class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">定期维护</h4>
+						<p class="text-muted">其他：需要雇佣专门人才管理信息系统</p>
+						<p>我们：定期到客户维护所有系统，提前排除问题</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src={% static 'img/tab1-4.png' %} class="media-object" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">实时技术支持</h4>
+						<p class="text-muted">其他：发生问题时很迷茫 着急</p>
+						<p>我们：随时远程解决问题，实时技术支持</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 tab2-img">
+				<img src={% static 'img/tab2.png' %} class="auto img-responsive center-block" alt="">
+			</div>
+		<div class="text col-md-6 col-sm-6 tab2-text">
+				<h3>实惠的价格，模块化安装</h3>
+				<p>可以根据您的企业需求安装必须的模块，轻量级，价格合理，易于管理</p>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="tab3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<img src={% static 'img/tab3.png' %} class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-md-6 col-sm-6">
+				<h3>强大的实时支持体系</h3>
+				<p>专业的技术支持人员，保证您的企业信息系统稳定安全</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer">
+	<div class="container">
+		<p>© 2017 www.yghan.com</p>
+		<p>All rights reserved yghan.com  Powered by Django boostrap.</p>
+	</div>
+</footer>
+	
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+	//轮播自动播放
+	$('#myCarousel').carousel({
+		interval:4000
+	});
+
+	//设置文字垂直居中
+	$(window).load(function(){
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$(window).resize(function () {
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$(window).load(function(){
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
+
+	$(window).resize(function () {
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
+
+</script>
+</body>
+</html>
