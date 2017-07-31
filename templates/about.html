@@ -58,7 +58,9 @@
 
 <div class="container">
     <div class="lead">
-    <h5>依冰科技www.yghan.com是韩亚光于2015年创立的信息系统建设网站，为企业客户分析 建设信息系统。</h5>
+    <h3>依冰科技(www.yghan.com)</h3>
+        <h5>是韩亚光于2015年创立的信息系统建设网站，为企业客户分析 建设 完善信息系统。</h5>
+        <h5>本公司有10年的从业经验,深耕于信息化事业，本着简单即美的哲学思想，</h5>
     </div>
 </div>
 
@@ -66,20 +68,46 @@
 <footer id="footer">
 	<div class="container">
         <div class="row">
-            <div class="col-md-6"><p class="text-left">© 2017 www.yghan.com</p></div>
-            <div class="col-md-6"><p class="text-right"><a href="mailto:it@yghan.com">it@yghan.com</a></p></div>
+            <div class="col-md-6"><p class="text-left">© 2017 www.yghan.com</p><p>All rights reserved yghan.com  Powered by Django boostrap.</p></div>
+            <div class="col-md-6"><img id="weixin" src="{% static 'img/weixin.png' %}" class="pull-right"><img id="logoweixin" src="{% static 'img/logoweixin.png' %}" style="display: none;" class="pull-right"></div>
         </div>
-        <div class="row">
-            <div class="col-md-6"><p class="text-left">All rights reserved yghan.com  Powered by Django boostrap.</p></div>
-            <div class="col-md-6"><p class="text-right">18611863893</p></div>
-        </div>
-	</div>
 </footer>
 
 
 	
 <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $("#weixin").click(function(){
+  $("#logoweixin").toggle();
+  });
+});
+</script>
+<script type="text/javascript">
 
+	//轮播自动播放
+	$('#myCarousel').carousel({
+		interval:4000
+	});
+
+	//设置文字垂直居中
+	$(window).load(function(){
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$(window).resize(function () {
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$(window).load(function(){
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
+
+	$(window).resize(function () {
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
+
+</script>
 </body>
 </html>

@@ -144,13 +144,21 @@
 
 <footer id="footer">
 	<div class="container">
-		<p>© 2017 www.yghan.com</p>
-		<p>All rights reserved yghan.com  Powered by Django boostrap.</p>
-	</div>
+        <div class="row">
+            <div class="col-md-6"><p class="text-left">© 2017 www.yghan.com</p><p>All rights reserved yghan.com  Powered by Django boostrap.</p></div>
+            <div class="col-md-6"><img id="weixin" src="{% static 'img/weixin.png' %}" class="pull-right"><img id="logoweixin" src="{% static 'img/logoweixin.png' %}" style="display: none;" class="pull-right"></div>
+        </div>
 </footer>
 	
 <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $("#weixin").click(function(){
+  $("#logoweixin").toggle();
+  });
+});
+</script>
 <script type="text/javascript">
 
 	//轮播自动播放
